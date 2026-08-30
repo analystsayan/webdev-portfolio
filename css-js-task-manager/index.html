@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TMS - Sayan</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>TMS</h1>
+            <p class="muted">Drag tasks between stages.</p>
+        </div>
+        <div class="controls" style="margin-left:auto">
+            <button id="clearAll" class="small">Clear All</button>
+            <button id="exportBtn" class="small">Export JSON</button>
+            <button id="importBtn" class="small">Import JSON</button>
+            <input id="importFile" type="file" accept="application/json" style="display:none" />
+        </div>
+    </header>
+
+    <!-- Add task -->
+    <div class="add-area"
+        style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px;align-items:center;justify-content:left;">
+        <div>
+            <input id="newTitle" placeholder="Task title" />
+        </div>
+        <div>
+            <input id="newDesc" placeholder="Short description (optional)" />
+        </div>
+        <div>
+            <select id="newStatus">
+                <option value="todo">To Do</option>
+                <option value="inprogress">In Progress</option>
+                <option value="review">Review</option>
+                <option value="done">Done</option>
+            </select>
+        </div>
+        <div>
+            <button id="addTask" class="add-btn">+ Add Task</button>
+        </div>
+    </div>
+
+    <main class="board" id="board">
+        <section class="column" data-status="todo">
+            <div class="col-head">
+                <div class="col-title">To Do</div>
+                <div class="col-count" id="count-todo">0</div>
+            </div>
+            <div class="list" id="list-todo"></div>
+        </section>
+
+        <section class="column" data-status="inprogress">
+            <div class="col-head">
+                <div class="col-title">In Progress</div>
+                <div class="col-count" id="count-inprogress">0</div>
+            </div>
+            <div class="list" id="list-inprogress"></div>
+        </section>
+
+        <section class="column" data-status="review">
+            <div class="col-head">
+                <div class="col-title">Review</div>
+                <div class="col-count" id="count-review">0</div>
+            </div>
+            <div class="list" id="list-review"></div>
+        </section>
+
+        <section class="column" data-status="done">
+            <div class="col-head">
+                <div class="col-title">Done</div>
+                <div class="col-count" id="count-done">0</div>
+            </div>
+            <div class="list" id="list-done"></div>
+        </section>
+    </main>
+
+    <div class="confetti" id="confettiRoot" aria-hidden="true"></div>
+
+    <footer>
+        <span class="muted">Saved locally in your browser • Double-click a card title & Description to edit •
+            Right-click for
+            delete</span>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
