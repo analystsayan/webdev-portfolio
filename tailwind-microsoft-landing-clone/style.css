@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-container {
+    overflow-x: scroll;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.front-img-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.front-img-2 {
+    background-image: linear-gradient(to right, #fff, #fff);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 1024px) {
+    .front-img-2 {
+        background-image: url(media/H2ighlight-Surface-Pro-AI-11Ed-Sapphire-MC001-3000x1682_VP4-1399x600.avif);
+    }
+}
