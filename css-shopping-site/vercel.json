@@ -1,0 +1,45 @@
+{
+    "rewrites": [
+        {
+            "source": "/accessories",
+            "destination": "/accessories.html"
+        },
+        {
+            "source": "/laptops",
+            "destination": "/laptops.html"
+        },
+        {
+            "source": "/mobiles",
+            "destination": "/mobiles.html"
+        },
+        {
+            "source": "/refrigerators",
+            "destination": "/refrigerators.html"
+        },
+        {
+            "source": "/powerbanks",
+            "destination": "/powerbanks.html"
+        },
+        {
+            "source": "/tablets",
+            "destination": "/tablets.html"
+        },
+        {
+            "source": "/privacy-policy",
+            "destination": "/privacy-policy.html"
+        },
+        {
+            "source": "/terms-and-conditions",
+            "destination": "/terms-and-conditions.html"
+        },
+        {
+            "source": "/about-us",
+            "destination": "/about-us.html"
+        },
+        {
+            "source": "/contact-us",
+            "destination": "/contact-us.html"
+        }
+    ],
+    "cleanUrls": true
+}

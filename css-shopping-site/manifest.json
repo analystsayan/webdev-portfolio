@@ -1,0 +1,20 @@
+{
+    "name": "Sayan Mondal Shop | Analyst Sayan",
+    "short_name": "SMxSHOP",
+    "icons": [
+        {
+            "src": "/src/favicon/favicon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/src/favicon/favicon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0f15",
+    "theme_color": "#0a0f15"
+}
